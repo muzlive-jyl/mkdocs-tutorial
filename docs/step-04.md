@@ -33,6 +33,16 @@ git push -u origin main
 
 이 명령어들은 현재 프로젝트의 모든 파일을 커밋하고, GitHub의 `main` 브랜치에 푸시합니다.
 
+#### 3.1 mkdocs용 gitignore 작성
+
+배포시 생성되는 파일을 추가하지 않기 위해, 아래를 추가합니다.
+```bash
+// .gitignore
+
+# mkdocs documentation
+/site
+```
+
 #### 4. GitHub Pages에 배포
 
 MkDocs는 GitHub Pages로 쉽게 배포할 수 있는 기능을 제공합니다. 다음 명령어를 터미널에서 실행하세요:
