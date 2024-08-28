@@ -1,9 +1,16 @@
 site_name: My Project Documentation
+repo_url: https://github.com/muzlive-jyl/mkdocs-tutorial
+repo_name: Mkdocs-Tutorial
 
 theme:
   name: 'material'
   logo: 'img/logo.png'  # docs 폴더 내의 경로
   favicon: 'img/favicon.png'  # docs 폴더 내의 경로
+  palette:
+    scheme: slate
+  features:
+    - content.code.copy
+    - content.code.annotate
 
 extra:
   social:
