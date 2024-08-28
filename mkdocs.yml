@@ -1,0 +1,23 @@
+site_name: My Project Documentation
+
+theme:
+  name: 'material'
+  logo: 'img/logo.png'  # docs 폴더 내의 경로
+  favicon: 'img/favicon.png'  # docs 폴더 내의 경로
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/swiftlang/swift
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/yourusername
+
+markdown_extensions:
+  - toc:
+      permalink: true # https://yakworks.github.io/docmark/extensions/permalinks/
+
+nav:
+  - Home: index.md
+  - Module 1: module1/README.md
+  - Module 2: module2/README.md
+  - Module 3: module3/README.md
