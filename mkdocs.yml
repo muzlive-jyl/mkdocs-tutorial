@@ -1,4 +1,4 @@
-site_name: My Project Documentation
+site_name: Mkdocs Tutorial
 repo_url: https://github.com/muzlive-jyl/mkdocs-tutorial
 repo_name: Mkdocs-Tutorial
 
@@ -8,9 +8,11 @@ theme:
   favicon: 'img/favicon.png'  # docs 폴더 내의 경로
   palette:
     scheme: slate
+    accent: 'pink' # 강조 색상
   features:
     - content.code.copy
     - content.code.annotate
+    - navigation.tabs
 
 extra:
   social:
@@ -22,14 +24,28 @@ extra:
 markdown_extensions:
   - toc:
       permalink: true # https://yakworks.github.io/docmark/extensions/permalinks/
-
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
 nav:
-  - Home:
+  - 소개:
     - index.md
+  - 튜토리얼:
     - step-01.md
     - step-02.md
     - step-03.md
     - step-04.md
+    - step-05.md
+    - 뎁스 한 번 더:
+      - depth/test-01.md
+  - iOS:
+    - ios-tutorial.md
   - Module 1: module1/README.md
   - Module 2: module2/README.md
   - Module 3: module3/README.md
